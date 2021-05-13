@@ -1,12 +1,13 @@
-# ExplNode 
-# A web application seeded with vulnerabilities, rootkits, backdoors and data leaks
+# ExplNode
 
-Explnode is a NodeJs based application that is seeded with vulnerable conditions (OWASP based, Business Logic Flaws, Rootkits and Data Leaks). Its main goal is to be an aid for security professionals to test with [Ocular](https://ocular.shiftleft.io), help web developers better understand the processes of securing web applications.
+## A web application seeded with vulnerabilities, rootkits, back doors, and data leaks
 
-### Common Vulnerabilities
+Explnode is a Node.js-based application seeded with security vulnerabilities (e.g., OWASP Top 10, business logic flaws, rootkits, and data leaks). This application can be used by security professionals to test [Ocular](https://ocular.shiftleft.io) or developers who want to understand the processes behind securing web applications.
 
-| File                                                                                              | Description                                                     |
-| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+## Common Vulnerabilities
+
+| File | Description |
+| - | - |
 | [`dep-lodash.js`](https://github.com/conikeec/explnode/blob/master/vulnerabilities/dep-lodash.js) | Prototype Pollution Attack caused due to OSS dependency LogDash |
 | [`exec.js`](https://github.com/conikeec/explnode/blob/master/vulnerabilities/exec.js)             | RCE Command Injection Exploit                                   |
 | [`loop.js`](https://github.com/conikeec/explnode/blob/master/vulnerabilities/loop.js)             | Denial of Service Exploit                                       |
@@ -18,8 +19,9 @@ Explnode is a NodeJs based application that is seeded with vulnerable conditions
 | [`xxe.js`](https://github.com/conikeec/explnode/blob/master/vulnerabilities/xxe.js)               | XXE Attack                                                      |
 
 ### Threat Modeling Queries
+
 [`Queries`](https://github.com/conikeec/explnode/blob/master/ocular_notebook/README.md)
 
 ## :warning: Disclaimer
 
-We do not take responsibility for the way in which any one uses this application. We have made the purposes of the application clear and it should not be used maliciously.
+We do not take responsibility for the way you use this application. We have made the purpose of the application clear and you should not use it in a malicious manner.
