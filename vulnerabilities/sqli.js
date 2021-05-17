@@ -15,7 +15,7 @@ connection.connect();
 router.get('/example1/user/:id',  (req,res) => {
     let userId = req.params.id;
     // Use escape function
-    connection.query("SELECT * FROM users WHERE id = " + connection.escape(userId), (err, result) => {
+    connection.query("SELECT * FROM users WHERE id = ?", [userId], (err, result) => {
         res.json(result);
     });
 })
